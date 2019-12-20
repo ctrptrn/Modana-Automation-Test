@@ -18,12 +18,9 @@ describe("Modana HR Login", function(){
 		cy.get('.el-scrollbar__view > :nth-child(6)').click()
 		cy.wait(60)
 		cy.get('.el-select > .el-input > .el-input__inner').click()
-		cy.get('.selected').click()
 		cy.get('.el-date-editor > .el-input__inner').click()
-		cy.wait(60)
-		cy.get(':nth-child(5) > :nth-child(5) > div').click()
-		cy.get(':nth-child(2) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner').click()
-		cy.get('.v-card__actions > .el-button--primary').click()
+		cy.get(':nth-child(4) > :nth-child(5) > div').click()
+		cy.get('.el-picker-panel__content > .el-scrollbar__view > :nth-child(1)').click()
 
 		/*
 		cy.get('#Employees > .v-list__tile__content').click()
