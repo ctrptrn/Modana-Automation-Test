@@ -1,5 +1,5 @@
-describe("Investor Login", function(){
-	it("Visit Investor Dashboard", function(){
+describe("Modana HR Login", function(){
+	it("Visit Website", function(){
 		cy.visit("http://dev.modana.id")
 		cy.get('.mod-form-item > .el-input__inner')
 			.type('8122045352')
