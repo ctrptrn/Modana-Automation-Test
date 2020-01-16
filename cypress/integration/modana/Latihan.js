@@ -20,7 +20,9 @@ describe("Modana HR Login", function(){
 		cy.get('.el-select > .el-input > .el-input__inner').click()
 		cy.get('.el-date-editor > .el-input__inner').click()
 		cy.get(':nth-child(4) > :nth-child(5) > div').click()
-		cy.get('.el-picker-panel__content > .el-scrollbar__view > :nth-child(1)').click()
+		cy.get(':nth-child(3) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner')
+		
+		
 
 		/*
 		cy.get('#Employees > .v-list__tile__content').click()
