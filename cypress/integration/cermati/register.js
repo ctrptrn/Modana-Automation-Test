@@ -1,22 +1,22 @@
 describe("Cermati Register", function(){
-	it("check wording indonesia", function(){
+	it("Positive Case", function(){
 
 		cy.server()
 
-		//scenario : checking wording in indonesia
+		//scenario : Register Page
         cy.visit("https://www.cermati.com/gabung")
         cy.get('#email')
-            .type('abc@email.com')
+            .type('citra.ptrn@gmail.com')
         cy.get('#password')
-            .type('password12345')
+            .type('kepodehanda123')
         cy.get('#confirm-password')
-            .type('password12345')
+            .type('kepodehanda123')
         cy.get('#first-name')
-            .type('firstname')
+            .type('Citra Putriana')
         cy.get('#last-name')
-            .type('lastname')
-        // cy.get('#mobile-phone')
-        //     .type('12345678910')
+            .type('Basuki')
+        cy.get('#mobile-phone')
+            .type('085719401338')
         cy.get('#residence-city')
             .type('KOTA JAKARTA SELATAN')
         cy.get('#residence-city')
