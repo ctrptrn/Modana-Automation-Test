@@ -1,29 +1,29 @@
 describe("Modana HR Register Fail", function(){
-	// it("check wording indonesia", function(){
+	it("check wording indonesia", function(){
 
-	// 	cy.server()
+		cy.server()
 
-	// 	//scenario : checking wording in indonesia
-    //     cy.visit("http://dev.modana.id/")
-    //     cy.get('.row > :nth-child(2)')
-    //         .click()
-    //     cy.get('.el-form > .el-button')
-    //         .click()
-    //     cy.get(':nth-child(1) > .el-col > .el-form-item > .el-form-item__content > .el-form-item__error')
-    //         .contains("Nomor Handphone dibutuhkan")
-    //     cy.get(':nth-child(2) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-form-item__error')
-    //         .contains("Nama Depan dibutuhkan")
-    //     cy.get(':nth-child(3) > :nth-child(2) > .el-form-item > .el-form-item__content > .el-form-item__error')
-    //         .contains("Nama Perusahaan dibutuhkan")
-    //     cy.get(':nth-child(4) > .el-col > .el-form-item > .el-form-item__content > .el-form-item__error')
-    //         .contains("Jenis Perusahaan dibutuhkan")
-    //     cy.get(':nth-child(5) > .el-col > .el-form-item > .el-form-item__content > .el-form-item__error')
-    //         .contains("Jenis Industry dibutuhkan")
-    //     cy.get(':nth-child(6) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-form-item__error')
-    //         .contains("Kata Sandi dibutuhkan")
-    //     cy.get(':nth-child(6) > :nth-child(2) > .el-form-item > .el-form-item__content > .el-form-item__error')
-    //         .contains("Konfirmasi Kata Sandi dibutuhkan")
-    // })
+		//scenario : checking wording in indonesia
+        cy.visit("http://dev.modana.id/")
+        cy.get('.row > :nth-child(2)')
+            .click()
+        cy.get('.el-form > .el-button')
+            .click()
+        cy.get(':nth-child(1) > .el-col > .el-form-item > .el-form-item__content > .el-form-item__error')
+            .contains("Nomor Handphone dibutuhkan")
+        cy.get(':nth-child(2) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-form-item__error')
+            .contains("Nama Depan dibutuhkan")
+        cy.get(':nth-child(3) > :nth-child(2) > .el-form-item > .el-form-item__content > .el-form-item__error')
+            .contains("Nama Perusahaan dibutuhkan")
+        cy.get(':nth-child(4) > .el-col > .el-form-item > .el-form-item__content > .el-form-item__error')
+            .contains("Jenis Perusahaan dibutuhkan")
+        cy.get(':nth-child(5) > .el-col > .el-form-item > .el-form-item__content > .el-form-item__error')
+            .contains("Jenis Industry dibutuhkan")
+        cy.get(':nth-child(6) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-form-item__error')
+            .contains("Kata Sandi dibutuhkan")
+        cy.get(':nth-child(6) > :nth-child(2) > .el-form-item > .el-form-item__content > .el-form-item__error')
+            .contains("Konfirmasi Kata Sandi dibutuhkan")
+    })
     it("phone number already registered", function(){
 
 		cy.server()
